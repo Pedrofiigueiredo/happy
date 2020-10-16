@@ -1,0 +1,72 @@
+#page-map {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+}
+
+#page-map aside {
+  width: 270px; /* min-width: 1300px -> 440px */
+  padding: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background: var(--blue-grd);      
+}
+
+#page-map aside img {
+  width: 3rem; /* min-width: 1300px -> 64px */
+}
+
+#page-map aside h2 {
+  font-weight: 800;
+  font-size: 36px; /* min-width: 1300px -> 440px */
+  line-height: 42px;
+
+  margin-top: 4rem; /* min-width: 1300px -> 80px */
+}
+
+#page-map aside p {
+  font-size: 18px;
+  line-height: 28px;
+
+  margin-top: 2rem;
+}
+
+#page-map footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-map footer strong {
+  font-weight: 800;
+}
+
+#page-map .create-orph {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  height: 64px;
+  background: var(--blue);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+#page-map .create-orph:hover {
+  background: #17D6EB;
+}
+
+#page-map .leaflet-container { /* class da div criada pelo componente */
+  z-index: 5;
+}
+
